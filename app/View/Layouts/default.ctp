@@ -40,9 +40,48 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="header">
 			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
 		</div>
+	
 		<div id="content">
+		 <table> 
+ <tr> 
+ <th> <?php if($this->Session->read('Auth.User.id')){
+				echo "Welcome Back ".$this->Session->read('Auth.User.username');
+
+			}else {
+
+				echo $this->Html->link('Please Login',array('controller'=>'users','action'=>'login'));
+
+			}	?>
+				
+
+</th>
+<th> 
+	<?php if($this->Session->read('Auth.User.id')){
+				echo "Mr. ".$this->Session->read('Auth.User.fullname');
+
+			}else {
+
+				
+
+			}	?>
+				
+
+
+</th>
+<th> 
+<?php 
+		if($this->Session->read('Auth.User.id'))
+			echo $this->Html->link('Logot',array('controller'=>'users','action'=>'logout'));
+?>
+
+
+ </th>
+ </tr>
+ </table>
+
 
 			<?php echo $this->Flash->render(); ?>
+
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
@@ -59,5 +98,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+
+
 </body>
 </html>

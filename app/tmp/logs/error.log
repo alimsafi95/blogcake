@@ -394,3 +394,1496 @@ Stack Trace:
 #9 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #10 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2017-10-17 09:36:59 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/test3/public_html/app/Model/User.php, line 14]
+2017-10-17 09:36:59 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 14, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 14, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 09:45:47 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/test3/public_html/app/Controller/UsersController.php, line 61]
+2017-10-17 09:45:47 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /users
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 61, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 61, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 09:46:44 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /users/delete/4
+Stack Trace:
+#0 /var/www/test3/public_html/app/Controller/UsersController.php(61): CakeRequest->allowMethod('post')
+#1 [internal function]: UsersController->delete('4')
+#2 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-10-17 09:50:59 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /users/delete/11
+Stack Trace:
+#0 /var/www/test3/public_html/app/Controller/UsersController.php(61): CakeRequest->allowMethod('post')
+#1 [internal function]: UsersController->delete('11')
+#2 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-10-17 10:07:50 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/var/www/test3/public_html/app/View/Users/index.ctp, line 23]
+2017-10-17 10:07:50 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 23, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 23, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 10:08:06 Error: [MissingHelperException] Helper class authHelper could not be found.
+Exception Attributes: array (
+  'class' => 'authHelper',
+  'plugin' => false,
+)
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('auth')
+#1 /var/www/test3/public_html/lib/Cake/View/View.php(858): HelperCollection->__isset('auth')
+#2 /var/www/test3/public_html/app/View/Users/index.ctp(23): View->__get('auth')
+#3 /var/www/test3/public_html/lib/Cake/View/View.php(971): include('/var/www/test3/...')
+#4 /var/www/test3/public_html/lib/Cake/View/View.php(933): View->_evaluate('/var/www/test3/...', Array)
+#5 /var/www/test3/public_html/lib/Cake/View/View.php(473): View->_render('/var/www/test3/...')
+#6 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-10-17 10:09:59 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/test3/public_html/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/test3/public_html/app/View/Users/index.ctp(23): View->__get('Auth')
+#3 /var/www/test3/public_html/lib/Cake/View/View.php(971): include('/var/www/test3/...')
+#4 /var/www/test3/public_html/lib/Cake/View/View.php(933): View->_evaluate('/var/www/test3/...', Array)
+#5 /var/www/test3/public_html/lib/Cake/View/View.php(473): View->_render('/var/www/test3/...')
+#6 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-10-17 10:10:00 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/test3/public_html/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/test3/public_html/app/View/Users/index.ctp(23): View->__get('Auth')
+#3 /var/www/test3/public_html/lib/Cake/View/View.php(971): include('/var/www/test3/...')
+#4 /var/www/test3/public_html/lib/Cake/View/View.php(933): View->_evaluate('/var/www/test3/...', Array)
+#5 /var/www/test3/public_html/lib/Cake/View/View.php(473): View->_render('/var/www/test3/...')
+#6 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-10-17 10:10:05 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/test3/public_html/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/test3/public_html/app/View/Users/index.ctp(23): View->__get('Auth')
+#3 /var/www/test3/public_html/lib/Cake/View/View.php(971): include('/var/www/test3/...')
+#4 /var/www/test3/public_html/lib/Cake/View/View.php(933): View->_evaluate('/var/www/test3/...', Array)
+#5 /var/www/test3/public_html/lib/Cake/View/View.php(473): View->_render('/var/www/test3/...')
+#6 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-10-17 10:46:08 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [/var/www/test3/public_html/app/View/Users/index.ctp, line 22]
+2017-10-17 10:46:08 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 22, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 22, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 10:51:19 Error: Fatal Error (1): Call to undefined method View::user() in [/var/www/test3/public_html/app/View/Users/index.ctp, line 24]
+2017-10-17 10:51:19 Error: [FatalErrorException] Call to undefined method View::user()
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 24, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 24, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:26:51 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/test3/public_html/app/View/Users/index.ctp, line 9]
+2017-10-17 11:26:51 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 9, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 9, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:27:18 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:27:18 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:27:19 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:27:19 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:27:19 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:27:19 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:27:29 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:27:29 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:28:35 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:28:35 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:28:36 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:28:36 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:28:36 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:28:36 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:28:36 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:28:36 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:28:36 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:28:36 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:28:36 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:28:36 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:28:43 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:28:43 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:30:06 Error: Fatal Error (1): Function name must be a string in [/var/www/test3/public_html/app/View/Users/index.ctp, line 9]
+2017-10-17 11:30:06 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/test3/...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/test3/...', 9, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/test3/...', 9, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:35:07 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:35:44 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:35:45 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:35:45 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:35:45 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:37:19 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:37:20 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:37:20 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:37:20 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:37:20 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:37:26 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:38:00 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:38:02 Error: [MissingComponentException] Component class SesisonComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SesisonComponent',
+  'plugin' => false,
+)
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Sesison', Array)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 11:38:29 Error: Fatal Error (1): Call to a member function user() on null in [/var/www/test3/public_html/app/View/Users/index.ctp, line 8]
+2017-10-17 11:38:29 Error: [FatalErrorException] Call to a member function user() on null
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 8, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 8, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:42:41 Error: Fatal Error (1): Call to undefined function isAuthorized() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 35]
+2017-10-17 11:42:41 Error: [FatalErrorException] Call to undefined function isAuthorized()
+Request URL: /posts/edit/8
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 35, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 35, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:55:34 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/test3/public_html/app/View/Users/index.ctp, line 12]
+2017-10-17 11:55:34 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 12, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 12, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 11:57:59 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in [/var/www/test3/public_html/app/Controller/UsersController.php, line 91]
+2017-10-17 11:57:59 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION)
+Request URL: /users/logout
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 91, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 91, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:10:53 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/test3/public_html/app/Controller/UsersController.php, line 114]
+2017-10-17 14:10:53 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /users/logout
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 114, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 114, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:11:36 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/test3/public_html/app/Controller/UsersController.php, line 116]
+2017-10-17 14:11:36 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /users/logout
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 116)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 116, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 116, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:11:37 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/test3/public_html/app/Controller/UsersController.php, line 116]
+2017-10-17 14:11:37 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /users/logout
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 116)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 116, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 116, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:25:51 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/test3/public_html/app/Model/User.php, line 42]
+2017-10-17 14:25:51 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /users/
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 42, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 42, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:43:39 Error: Fatal Error (1): Call to a member function findById() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 21]
+2017-10-17 14:43:39 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /posts/view/3
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 21, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 21, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:44:08 Error: [NotFoundException] Invalid Post
+Request URL: /posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-17 14:44:40 Error: Fatal Error (1): Call to a member function findById() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 21]
+2017-10-17 14:44:40 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /posts/view/1
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 21, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 21, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:44:56 Error: Fatal Error (1): Call to a member function findById() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 21]
+2017-10-17 14:44:56 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /posts/view/10
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 21, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 21, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:51:43 Error: Fatal Error (1): Call to a member function findById() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 22]
+2017-10-17 14:51:43 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /posts/view/10
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 22, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 22, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 14:57:00 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'postcount' doesn't have a default value
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ca...')
+#3 /var/www/test3/public_html/lib/Cake/Model/Model.php(1940): DboSource->create(Object(User), Array, Array)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/test3/public_html/app/Controller/UsersController.php(28): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-10-17 15:08:21 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/test3/public_html/app/Controller/PostsController.php, line 12]
+2017-10-17 15:08:21 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 12, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 12, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 15:21:07 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/test3/public_html/app/Controller/PostsController.php, line 84]
+2017-10-17 15:21:07 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 84)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 84, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 84, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 15:30:26 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/test3/public_html/app/View/Posts/index.ctp, line 27]
+2017-10-17 15:30:26 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 27, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 27, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 15:30:36 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/test3/public_html/app/View/Posts/index.ctp, line 27]
+2017-10-17 15:30:36 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 27, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 27, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 16:01:35 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/test3/public_html/app/Controller/PostsController.php, line 49]
+2017-10-17 16:01:35 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /add
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 49, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 49, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 16:21:05 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/test3/public_html/app/Controller/PostsController.php, line 48]
+2017-10-17 16:21:05 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /add
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 48, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 48, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 16:58:36 Error: Fatal Error (4): syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/var/www/test3/public_html/app/Controller/PostsController.php, line 48]
+2017-10-17 16:58:36 Error: [FatalErrorException] syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /add
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 48, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 48, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 17:00:12 Error: Fatal Error (1): Call to a member function save() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 44]
+2017-10-17 17:00:12 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /add
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 44, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 44, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-17 17:04:21 Error: Fatal Error (4): syntax error, unexpected 'pr' (T_STRING) in [/var/www/test3/public_html/app/Controller/PostsController.php, line 58]
+2017-10-17 17:04:21 Error: [FatalErrorException] syntax error, unexpected 'pr' (T_STRING)
+Request URL: /add
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 58, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 58, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 09:14:35 Error: [MissingViewException] View file "Posts/bulkdelete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/bulkdelete.ctp',
+)
+Request URL: /posts/bulkdelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 09:16:10 Error: [MissingViewException] View file "Posts/bulkdelete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/bulkdelete.ctp',
+)
+Request URL: /posts/bulkdelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 09:25:53 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/test3/public_html/app/View/Posts/index.ctp, line 11]
+2017-10-18 09:25:53 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 11, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 11, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 09:51:06 Error: [MissingActionException] Action UsersController::ogin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ogin',
+)
+Request URL: /users/ogin
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-10-18 10:11:56 Error: [NotFoundException] Invalid Post to be deleted
+Request URL: /posts/delete
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 10:12:02 Error: [NotFoundException] Invalid Post to be deleted
+Request URL: /posts/delete
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 10:13:47 Error: [MissingViewException] View file "Posts/bulk_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/bulk_delete.ctp',
+)
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 10:17:35 Error: [MissingViewException] View file "Posts/bulk_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/bulk_delete.ctp',
+)
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 10:18:03 Error: [MissingViewException] View file "Posts/bulk_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/bulk_delete.ctp',
+)
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 10:19:42 Error: [MissingViewException] View file "Posts/bulk_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/bulk_delete.ctp',
+)
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-18 11:34:21 Error: Fatal Error (1): Call to undefined function delete() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 22]
+2017-10-18 11:34:21 Error: [FatalErrorException] Call to undefined function delete()
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 11:34:54 Error: Fatal Error (1): Call to undefined function delete() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 22]
+2017-10-18 11:34:54 Error: [FatalErrorException] Call to undefined function delete()
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 11:35:15 Error: Fatal Error (1): Call to undefined function view() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 22]
+2017-10-18 11:35:15 Error: [FatalErrorException] Call to undefined function view()
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 11:35:17 Error: Fatal Error (1): Call to undefined function view() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 22]
+2017-10-18 11:35:17 Error: [FatalErrorException] Call to undefined function view()
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 11:36:02 Error: Fatal Error (1): Call to undefined function delete() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 22]
+2017-10-18 11:36:02 Error: [FatalErrorException] Call to undefined function delete()
+Request URL: /posts/bulkDelete
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 22, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 14:43:24 Error: Fatal Error (1): Call to undefined method PostsController::fetch() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 20]
+2017-10-18 14:43:24 Error: [FatalErrorException] Call to undefined method PostsController::fetch()
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 20, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 20, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-18 15:06:59 Error: Fatal Error (4): syntax error, unexpected '/' in [/var/www/test3/public_html/app/Controller/PostsController.php, line 27]
+2017-10-18 15:06:59 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 27, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 27, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 09:41:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asec  LIMIT 15' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(23): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 09:42:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '> 0    LIMIT 15' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(22): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 11:45:03 Error: Fatal Error (1): Call to undefined method PostsController::query() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 27]
+2017-10-19 11:45:03 Error: [FatalErrorException] Call to undefined method PostsController::query()
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 27, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 27, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 11:46:47 Error: Fatal Error (1): Call to undefined method PostsController::query() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 28]
+2017-10-19 11:46:47 Error: [FatalErrorException] Call to undefined method PostsController::query()
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 28, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 28, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 11:49:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 15' at line 5
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('select posts.* ...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('select posts.* ...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('select posts.* ...', false)
+#4 [internal function]: DboSource->query('select posts.* ...', false)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3470): call_user_func_array(Array, Array)
+#6 /var/www/test3/public_html/app/Model/Post.php(32): Model->query('select posts.* ...')
+#7 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(190): Post->paginate(Array, NULL, NULL, 15, 1, 1, Array)
+#8 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#9 /var/www/test3/public_html/app/Controller/PostsController.php(59): Controller->paginate('Post')
+#10 [internal function]: PostsController->index()
+#11 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-10-19 12:01:59 Error: [MissingTableException] Table 1 for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => '1',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Model.php(3667): Model->setSource(true)
+#1 /var/www/test3/public_html/lib/Cake/Model/Model.php(3469): Model->getDataSource()
+#2 /var/www/test3/public_html/app/Model/Post.php(32): Model->query('select posts.* ...')
+#3 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(190): Post->paginate(Array, NULL, NULL, 15, 1, 1, Array)
+#4 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#5 /var/www/test3/public_html/app/Controller/PostsController.php(59): Controller->paginate('Post')
+#6 [internal function]: PostsController->index()
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-10-19 12:02:18 Error: Fatal Error (1): Call to undefined function pe() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 61]
+2017-10-19 12:02:18 Error: [FatalErrorException] Call to undefined function pe()
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 61, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 61, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 12:28:49 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/test3/public_html/app/Controller/PostsController.php, line 55]
+2017-10-19 12:28:49 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 55, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 55, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 12:54:17 Error: Fatal Error (1): Call to undefined method PostsController::getDatasource() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 47]
+2017-10-19 12:54:17 Error: [FatalErrorException] Call to undefined method PostsController::getDatasource()
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 47, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 47, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 12:58:08 Error: Fatal Error (1): Call to undefined method PostsController::getDatasource() in [/var/www/test3/public_html/app/Controller/PostsController.php, line 47]
+2017-10-19 12:58:08 Error: [FatalErrorException] Call to undefined method PostsController::getDatasource()
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/test3/...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/test3/...', 47, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/test3/...', 47, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 13:00:03 Error: Fatal Error (1): Call to a member function getLog() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 65]
+2017-10-19 13:00:03 Error: [FatalErrorException] Call to a member function getLog() on null
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 13:00:37 Error: Fatal Error (1): Call to a member function getLog() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 65]
+2017-10-19 13:00:37 Error: [FatalErrorException] Call to a member function getLog() on null
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 13:00:39 Error: Fatal Error (1): Call to a member function getLog() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 65]
+2017-10-19 13:00:39 Error: [FatalErrorException] Call to a member function getLog() on null
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 13:00:41 Error: Fatal Error (1): Call to a member function getLog() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 65]
+2017-10-19 13:00:41 Error: [FatalErrorException] Call to a member function getLog() on null
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 65, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 14:25:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Post'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(73): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 14:28:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '15  WHERE `Post`.`visible` <> 0 AND `Post`.`title` like 'trh%'    LIMIT 20' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(User), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(74): Controller->paginate('User')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 14:34:11 Error: Fatal Error (1): Call to a member function getLastQuery() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 76]
+2017-10-19 14:34:11 Error: [FatalErrorException] Call to a member function getLastQuery() on null
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 76, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 76, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 14:35:38 Error: Fatal Error (1): Call to a member function getLog() on null in [/var/www/test3/public_html/app/Controller/PostsController.php, line 77]
+2017-10-19 14:35:38 Error: [FatalErrorException] Call to a member function getLog() on null
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/test3/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/test3/...', 77, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/test3/...', 77, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 14:38:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Post posts LEFT `User`.`id` = `Post`.`user_id`  WHERE `Post`.`visible` <> 0 AND ' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(User), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(75): Controller->paginate('User')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 14:50:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Post posts LEFT Array  WHERE `Post`.`visible` <> 0 AND `Post`.`title` like 'trh%' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(User), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(75): Controller->paginate('User')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 14:50:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'User users LEFT Array  WHERE `Post`.`visible` <> 0 AND `Post`.`title` like 'trh%' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(75): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 14:54:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'User'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(75): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 14:56:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '`Post`.`user_id`')  WHERE `Post`.`visible` <> 0 AND `Post`.`title` like 'trh%' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(75): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 14:56:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `Post`.`visible` <> 0 AND `Post`.`title` like 'trh%'    LIMIT 15' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(75): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:02:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(78): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:03:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'User'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(78): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:04:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'User'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(78): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:04:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'User'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(78): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:04:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(78): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:10:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(83): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:32:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(82): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:34:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(83): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:35:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(83): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:35:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(83): Controller->paginate('Post')
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:43:14 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/test3/public_html/app/Controller/PostsController.php, line 61]
+2017-10-19 15:43:14 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/test3/...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/test3/...', 61, Array)
+#2 /var/www/test3/public_html/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/test3/...', 61, Array)
+#3 /var/www/test3/public_html/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-10-19 15:56:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%    LIMIT 15' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(77): Controller->paginate('Post', Array)
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:56:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%    LIMIT 15' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(77): Controller->paginate('Post', Array)
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:57:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%    LIMIT 15' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(77): Controller->paginate('Post', Array)
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:57:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%    LIMIT 20' at line 1
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(76): Controller->paginate('Post', Array)
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 15:59:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'erf' in 'where clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(76): Controller->paginate('Post', Array)
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-10-19 16:02:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.xd' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/test3/public_html/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/test3/public_html/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/test3/public_html/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/test3/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Post', Array, Array)
+#8 /var/www/test3/public_html/app/Controller/PostsController.php(76): Controller->paginate('Post', Array)
+#9 [internal function]: PostsController->index()
+#10 /var/www/test3/public_html/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/test3/public_html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/test3/public_html/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

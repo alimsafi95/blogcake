@@ -6,6 +6,7 @@
 <th> Role </th>
 <th> Created </th> 
 <th> Modified </th>
+<th> Post count </th>
 <th> Action </th>
 </tr>
 
@@ -17,6 +18,8 @@
 	<td> <?php echo $user['User']['role']; ?></td>
 	<td> <?php echo $user['User']['created']; ?></td>
 	<td> <?php echo $user['User']['modified']; ?></td>
+	<td> <?php if(isset($userpost[0][0]))
+		echo $userpost[0][0] ['count( posts.user_id )'];									?>	</td>
 	<td>  <?php echo $this->Html->link('edit',array('controller'=>'users','action'=>'edit',$user['User']['id']));?>
 			<?php echo $this->Form->postLink('delete',array('action'=>'delete',$user['User']['id']),array('confirm'=>'Are you sure you want to delete the record with id: '.$user['User']['id'].'?'));?>	
 	 </td>
